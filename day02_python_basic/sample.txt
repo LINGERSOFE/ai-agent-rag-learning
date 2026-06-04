@@ -1,0 +1,5 @@
+Python is useful.
+Python is powerful.
+AI Agent needs Python.
+RAG needs document processing.
+Python can help us build AI tools.
