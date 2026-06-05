@@ -1,0 +1,14 @@
+[
+  {
+    "question": "什么是虚拟环境？",
+    "answer": "虚拟环境是给每个 Python 项目准备的独立依赖环境。"
+  },
+  {
+    "question": "为什么要使用 .env？",
+    "answer": ".env 用来保存 API Key、数据库密码等敏感配置，避免直接写进代码。"
+  },
+  {
+    "question": "为什么要使用 .gitignore？",
+    "answer": ".gitignore 用来告诉 Git 哪些文件不需要提交，例如 .env、.venv 和 __pycache__。"
+  }
+]

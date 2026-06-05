@@ -120,3 +120,130 @@ tasks = ["变量", "字符串", "列表", "字典"]
 for task in tasks:
     print("今天要学习：", task)
 ```
+
+--- 
+
+## 字典
+
+字典用来保存“键值对”。非常适合保存结构化信息。
+- 例如一个学生的信息
+```python 
+student = {
+    "name": "Lingersofe",
+    "grade": "大一",
+    "target": "AI Agent 实习",
+    "language": "Python"
+}
+
+print(student)
+print(student["name"])
+print(student["target"])
+```
+
+1. 添加和修改字典内容
+```python
+student = {
+    "name": "Lingersofe",
+    "grade": "大一"
+}
+
+student["target"] = "进入大公司实习"
+student["grade"] = "大一暑假"
+
+print(student)
+```
+
+2. 遍历字典
+```python
+student = {
+    "name": "Lingersofe",
+    "grade": "大一",
+    "target": "AI Agent 实习"
+}
+
+for key, value in student.items():
+    print(key, ":", value)
+```
+
+
+3. 字典再AI项目中的作用
+- 做 Prompt 输出 JSON、处理 API 返回结果时，字典会非常常见
+```python
+job_info = {
+    "岗位名称": "AI Agent 实习生",
+    "技能要求": ["Python", "RAG", "Prompt", "LangChain"],
+    "学习建议": "先做一个知识库问答项目"
+}
+
+print(job_info["技能要求"])
+```
+
+---
+
+## 条件判断if
+1.  `if` `elif` `else`
+
+2. 判断列表中是否包含某个元素
+```python
+skills = ["Python", "Git", "Markdown"]
+
+if "Python" in skills:
+    print("已经开始学习 Python")
+else:
+    print("还需要补 Python")
+```
+
+---
+
+## 循环 `for` `while`
+1. `for`循环和`range()`
+```python
+tasks = ["变量", "字符串", "列表"]
+
+for task in tasks:
+    print(task)
+
+
+for i in range(5):
+    print(i)
+
+```
+
+2. `while `循环
+```python
+count = 1
+
+while count <= 5:
+    print("当前次数：", count)
+    count += 1
+```
+
+## 函数
+- 函数名后可加参数，最后可以返回一个值。
+```python
+def functionname()
+pass
+```
+
+## 小项目：读取文档中文字并进行词频统计
+
+1. 创建 `sample.txt`
+2. 创建` word_count.py`
+3. 
+| 函数                 | 作用         |
+| ------------------ | ---------- |
+| `read_file()`      | 读取文本文件     |
+| `clean_text()`     | 清洗文本       |
+| `count_words()`    | 统计词频       |
+| `show_top_words()` | 展示前 N 个高频词 |
+| `main()`           | 组织整个程序流程   |
+
+- 以后做 RAG 时，也会经历类似流程：
+```text
+读取文档
+→ 清洗文本
+→ 切分文本
+→ 统计或向量化
+→ 检索
+→ 输出结果
+```
